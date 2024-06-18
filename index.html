@@ -41,7 +41,7 @@
 
     <!---Boton de Cambio a Claro / Oscuro-->
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center"
+      <button class="btn btn-warning py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
               type="button"
               aria-expanded="false"
@@ -119,25 +119,25 @@
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2  text-c" href="#app_js_1">
                     <i class="bi bi-rulers"></i>
-                    App 1 Js
+                    App 1 Js-IMC
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2 text-c" href="#app_js_2">
                     <i class="bi bi-stopwatch"></i>
-                    App 2 Js
+                    App 2 Js-Edad
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2 text-c" href="#app_js_3">
                     <i class="bi bi-credit-card-2-front"></i>
-                    App 3 Js
+                    App 3 Js-Sueldo
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2 text-c" href="#app_js_4">
                     <i class="bi bi-cash-coin"></i>
-                    App 4 Js
+                    App 4 Js-Descuento
                   </a>
                 </li>
                 <li class="nav-item">
@@ -170,8 +170,24 @@
               
               <div class="col-md-10 py-5 d-flex flex-column ">
                 <h2 class="tituloapp">IMC Indice De Masa Corporal</h2>
-                <img src="img/imc.png" alt="" class="img-1">
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" id="imc">
+                    <button type="button" class="btn bg-modal" data-bs-toggle="modal" data-bs-target="#exampleModalimg">
+                      Info
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalimg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content"> 
+                          <div class="modal-body">
+                            <img src="img/imc.png" alt="" class="img-1">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn bg-modal" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="form-floating mb-3">
                       <input type="number" class="form-control text-c" id="num1" placeholder="Peso(kg)">
                     </div>
@@ -192,16 +208,36 @@
             <!--Row2 Formulario 2-->
             <div id="app_js_2" class="row d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
-                <h2 class="tituloapp">Edad -></h2>
-                <p class="text-c2">Diseñar un algoritmo que identifique si una persona es niño, joven, adulto o adulto mayor.
-                  Para lo cual debe leer su edad.
-                  Si la edad es menor o igual a 12 años, el algoritmo debe indicar "Eres un niño"
-                  Si la edad es mayor a 12 años y menor o igual a 40 años, el algoritmo debe indicar "Eres
-                  un joven"
-                  Si la edad es mayor a 40 años y menor o igual a 60 años, el algoritmo debe indicar "Eres
-                  un adulto"
-                  Si la edad es mayor a 60 años el algoritmo debe indicar "Eres un adulto mayor"</p>
+                <h2 class="tituloapp">Conoce Tu Edad</h2>
+                
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <!-- Button trigger modal -->
+
+                  <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <button type="button" class="btn bg-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Info
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content"> 
+                          <div class="modal-body">
+                            <p class="text-c2">Diseñar un algoritmo que identifique si una persona es niño, joven, adulto o adulto mayor.
+                              Para lo cual debe leer su edad.
+                              Si la edad es menor o igual a 12 años, el algoritmo debe indicar "Eres un niño"
+                              Si la edad es mayor a 12 años y menor o igual a 40 años, el algoritmo debe indicar "Eres
+                              un joven"
+                              Si la edad es mayor a 40 años y menor o igual a 60 años, el algoritmo debe indicar "Eres
+                              un adulto"
+                              Si la edad es mayor a 60 años el algoritmo debe indicar "Eres un adulto mayor"</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn bg-modal" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="form-floating mb-3">
                       <input type="number" class="form-control text-c" id="nombre" placeholder="Digita Tu Edad">
                     </div>
@@ -219,13 +255,31 @@
             <div id="app_js_3" class="row d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
                 <h2 class="tituloapp">Sueldo!</h2>
-                <p class="text-c2">Que calcule el sueldo que le corresponde al trabajador de una empresa que cobra 40.000 euros
-                  anuales, el programa debe realizar los cálculos en función de los siguientes criterios:
-                  a. Si lleva menos de 3 años se le aplica un aumento del 3%.
-                  b. Si lleva mas de 3 años pero menos de 5 años se le aplica un aumento del 5%.
-                  c. Si lleva mas de 5 años pero menos de 10 años se le aplica un aumento del 7%.
-                  d. Si lleva más de 10 años en la empresa se le aplica un aumento del 10%.</p>
+                <!-- Button trigger modal -->
+
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <button type="button" class="btn bg-modal" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      Info
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content"> 
+                          <div class="modal-body">
+                            <p class="text-c2">Diseña un programa que calcule el sueldo que le corresponde al trabajador de una empresa que cobra 40.000 euros
+                              anuales, el programa debe realizar los cálculos en función de los siguientes criterios:
+                              a. Si lleva menos de 3 años se le aplica un aumento del 3%.
+                              b. Si lleva mas de 3 años pero menos de 5 años se le aplica un aumento del 5%.
+                              c. Si lleva mas de 5 años pero menos de 10 años se le aplica un aumento del 7%.
+                              d. Si lleva más de 10 años en la empresa se le aplica un aumento del 10%.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn bg-modal" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="form-floating mb-3">
                       <input type="number" class="form-control text-c" id="años" placeholder="Digita lo años que tienes en la empresa">
                     </div>
@@ -239,12 +293,31 @@
             </div>
             <!--Fin Row2 Formulario 3-->
 
-            <!--Row2 Formulario 3-->
+            <!--Row2 Formulario 4-->
             <div id="app_js_4" class="row d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
                 <h2 class="tituloapp">Descuento De Zapatos</h2>
-                <p class="text-c2">Si son menos de 10 zapatos no hay descuento <br>si compra 10 o mas y menos 20 hay un descuento del 10% <br>y Si Compra mas de 20 zapatos tiene un descuento de 20%</p>
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <!-- Button trigger modal -->
+
+                  <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <button type="button" class="btn bg-modal" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                      Info
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content"> 
+                          <div class="modal-body">
+                            <p class="text-c2">Si son menos de 10 zapatos no hay descuento <br>si compra 10 o mas y menos 20 hay un descuento del 10% <br>y Si Compra mas de 20 zapatos tiene un descuento de 20%</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn bg-modal" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="form-floating mb-3">
                       <input type="number" class="form-control text-c" id="zapatos" placeholder="Digite los zapatos a comprar!">
                     </div>
@@ -268,7 +341,7 @@
                   <form action="" id="form_pesoIdeal">
                       <div class="mb-3">
                           <label for="sexo">Sexo</label>
-                          <select name="" id="sexo" class="form-select">
+                          <select name="" id="sexo" class="form-select" required>
                               <option value="">Seleccione Su Sexo</option>
                               <option value="Masculino">Masculino</option>
                               <option value="Femenino">Femenino</option>
