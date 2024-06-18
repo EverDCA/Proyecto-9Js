@@ -1,0 +1,53 @@
+
+.bg-1{
+
+  border-radius: 10px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  height: 50px;
+  border: 2px solid #00000049;
+  background-color: #d6fff6;
+  
+  
+}
+
+.bg-1:hover{
+  animation: rainbow 5s infinite;
+  animation-timing-function:unset;
+}
+@keyframes rainbow {
+  0%{background-color: #d6fff6;}
+  25%{background-color: #b3ff00d2;}
+  50%{background-color: #00eeff;}
+  75%{background-color: #9900ff;}
+  85%{background-color: #ff0040;}
+  100%{  background-color: #d6fff6;
+  }
+}
+
+.hr{  
+            opacity: 1;
+            border: 2px solid rgba(0, 0, 0, 0.452);
+            border-radius: 10px;
+            height: 10px;
+            margin-bottom: 50px;
+  animation: texto 4s infinite;
+}
+@keyframes texto {
+  0%{background-color: #ff0000;
+  }
+  25%{background-color: #b3ff00;}
+  50%{background-color: #00eeff;}
+  75%{background-color: #9900ff;}
+  100%{background-color: #ff0040;}
+}
+
+.textc{
+  text-align: center;
+
+}
+
+.imgb{
+  width: 120px;
+}
