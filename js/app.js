@@ -5,7 +5,7 @@ document.getElementById('form_pesoIdeal').addEventListener('submit',function(eve
   const edad = parseFloat(document.getElementById('edad').value);
   const peso = parseFloat(document.getElementById('pesoActual').value);
   const estatura = parseFloat(document.getElementById('estatura').value);
-  const imc = peso / ((estatura / 100) * 2);
+  const imc = Math.round(peso / ((estatura / 100) * 2))
   let pesoideal;
   let lossweigth;
 
