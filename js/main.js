@@ -6,10 +6,10 @@ function imc() {
   if (isNaN(num1) || isNaN(num2)) {
     document.getElementById(
       "resultado1"
-    ).innerHTML = `<div class='alert alert-danger' role='alert'> <strong>Syntax Error!:Digite los numeros$</strong></div>`;
+    ).innerHTML = `<div class='alert alert-danger' role='alert'> <strong>Valores Vacios!</strong></div>`;
   } else if (num1 === 0 || num2 === 0) {
     document.getElementById("resultado1").innerHTML =
-      "<div class='alert alert-danger' role='alert'> <strong>Syntax Error!: 0 = 0</strong></div>";
+      "<div class='alert alert-danger' role='alert'> <strong>Valores Vacios!</strong></div>";
   } else if (imc <= 18) {
     document.getElementById(
       "resultado1"
@@ -39,6 +39,9 @@ function imc() {
       "resultado1"
     ).innerHTML = `<div class='alert alert-danger' role='alert'> <p>Usted Tiene Obesidad Tipo 4, IMC=${imc}</p><img src='img/gordo.png' alt=''></div>`;
   }
+  else{
+    document.getElementById('resultado1').innerHTML=`<div class='alert alert-danger' role='alert'>Algo Salio Mal ¿? Intente denuevo: Error De Sintaxys</div>`;  
+  }
 }
 
 function edad() {
@@ -47,10 +50,10 @@ function edad() {
   if (isNaN(edad)) {
     document.getElementById(
       "resultado2"
-    ).innerHTML = `<div class='alert alert-danger' role='alert'> <strong>Syntax Error!: 0 = 0!${edad}</strong></div>`;
+    ).innerHTML = `<div class='alert alert-danger' role='alert'> <strong>Valores Vacios!</strong></div>`;
   } else if (edad === 0 || edad === 0) {
     document.getElementById("resultado2").innerHTML =
-      "<div class='alert alert-danger' role='alert'> <strong>Syntax Error!: 0 = 0!</strong></div>";
+      "<div class='alert alert-danger' role='alert'> <strong>Valores Vacios!</strong></div>";
     años;
   } else if (edad <= 12) {
     document.getElementById(
@@ -80,17 +83,24 @@ function porcentaje() {
   const pago = 40000;
   let pagofin;
 
+  if(años == isNaN){
+    document.getElementById(
+      "resultado3"
+    ).innerHTML = `<div class='alert alert-success' role='alert'> Valores En Blanco, Intente Denuevo</div>`;
+  
+
+  }
   if (años < 3) {
     pagofin = pago * 0.03 + pago;
     document.getElementById(
       "resultado3"
     ).innerHTML = `<div class='alert alert-success' role='alert'> <p>Su Sueldo Final es: ${pagofin}</p><img src='img/bonosueldo.png' alt=''></div>`;
-  } else if (años > 3 && años < 5) {
+  } else if (años >= 3 && años < 5) {
     pagofin = pago * 0.05 + pago;
     document.getElementById(
       "resultado3"
     ).innerHTML = `<div class='alert alert-success' role='alert'> <p>Su Sueldo Final es: ${pagofin}</p><img src='img/bonosueldo.png' alt=''></div>`;
-  } else if (años > 5 && años < 10) {
+  } else if (años >= 5 && años < 10) {
     pagofin = pago * 0.07 + pago;
     document.getElementById(
       "resultado3"
@@ -103,7 +113,7 @@ function porcentaje() {
   } else {
     document.getElementById(
       "resultado3"
-    ).innerHTML = `<div class='alert alert-danger' role='alert'> <p>Algo Salio Mal ¿? Intente denuevo: Error De Sintaxys</p></div>`;
+    ).innerHTML = `<div class='alert alert-danger' role='alert'> <p>Algo Salio Mal ¿? Intente denuevo: Valores Vacios!</p></div>`;
   }
 }
 
@@ -134,5 +144,10 @@ function lospisos() {
     } tuvo un descuento de: ${descuento} pesos precio final ${
       precio * zapatos - descuento
     } pesos</p><img src='img/descuentozapatos.png' alt=''></div>`;
+  }
+  else{
+    document.getElementById(
+      "resultado4"
+    ).innerHTML = `<div class='alert alert-danger' role='alert'>Algo Salio Mal ¿? Intente denuevo: Valores Vacios!</div>`;
   }
 }

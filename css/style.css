@@ -18,23 +18,21 @@
 }
 
 .text-c{
-  background: -webkit-linear-gradient(#fff700, #ff8800);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 179, 0, 0.489);
+  color: #ff9100;
   font-weight: 700;
   text-align: center;
+  
+}
+
+.text-c:hover{
+  color: #875f01;
 }
 
 
 
 .tituloapp{
-  background: -webkit-linear-gradient(#fff700, #ff8800);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 179, 0, 0.489);
   text-align: center;
   font-weight: 700;
-
-
 } 
 
 .img-1{
@@ -48,6 +46,13 @@
   font-size: 18px;
   font-weight: 400;
   text-align: justify;
+  
+}
+
+.text-c3{
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
   
 }
 
@@ -110,10 +115,6 @@ animation: texto 4s infinite;
   background-color: #fffd9c;
   color: black;
   border: 2px solid #00000049;
-}
-.textc{
-  text-align: center;
-
 }
 
 .imgb{

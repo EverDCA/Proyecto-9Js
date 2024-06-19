@@ -169,10 +169,11 @@
             <div id="app_js_1" class="row  d-flex justify-content-center align-items-center">
               
               <div class="col-md-10 py-5 d-flex flex-column ">
-                <h2 class="tituloapp">IMC Indice De Masa Corporal</h2>
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" id="imc">
+                <h2 class="tituloapp">IMC Indice De Masa Corporal</h2>
+
                     <button type="button" class="btn bg-modal" data-bs-toggle="modal" data-bs-target="#exampleModalimg">
-                      Info
+                      <img src="img/info.png">
                     </button>
                     
                     <!-- Modal -->
@@ -189,10 +190,12 @@
                       </div>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="number" class="form-control text-c" id="num1" placeholder="Peso(kg)">
+                      <input type="number" class="form-control" id="num1" placeholder="Peso(kg)" required>
+                      <label for="floatingPassword">Peso(Kg)</label>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="number" class="form-control text-c" id="num2" placeholder="Estatura(m)">
+                      <input type="number" class="form-control" id="num2" placeholder="Estatura(M)" required>
+                      <label for="floatingPassword">Estatura(M)</label>
                     </div>
                     
                     <button class="w-100 bg-1" onclick="imc()" type="button">Calcular</button>
@@ -208,14 +211,15 @@
             <!--Row2 Formulario 2-->
             <div id="app_js_2" class="row d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
-                <h2 class="tituloapp">Conoce Tu Edad</h2>
                 
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                     <!-- Button trigger modal -->
 
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                <h2 class="tituloapp">Conoce Tu Edad</h2>
+
                     <button type="button" class="btn bg-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      Info
+                      <img src="img/info.png" alt="">
                     </button>
                     
                     <!-- Modal -->
@@ -239,7 +243,8 @@
                       </div>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="number" class="form-control text-c" id="nombre" placeholder="Digita Tu Edad">
+                      <input type="number" class="form-control" id="nombre" placeholder="Digita Tu Edad" required>
+                      <label for="floatingPassword">Digite Su Edad</label>
                     </div>
                   
                     <button class="w-100 bg-1" type="button" onclick="edad()">Calcular</button>
@@ -254,12 +259,13 @@
             <!--Row2 Formulario 3-->
             <div id="app_js_3" class="row d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
-                <h2 class="tituloapp">Sueldo!</h2>
+                
                 <!-- Button trigger modal -->
 
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <h2 class="tituloapp">Sueldo!</h2>
                     <button type="button" class="btn bg-modal" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                      Info
+                      <img src="img/info.png" alt="">
                     </button>
                     
                     <!-- Modal -->
@@ -281,7 +287,8 @@
                       </div>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="number" class="form-control text-c" id="años" placeholder="Digita lo años que tienes en la empresa">
+                      <input type="number" class="form-control" id="años" placeholder="Digita lo años que tienes en la empresa" required>
+                      <label for="floatingPassword">Digite Los Años De La Empresa</label>
                     </div>
                   
                     <button class="w-100 bg-1" type="button" onclick="porcentaje()">Calcular</button>
@@ -296,13 +303,14 @@
             <!--Row2 Formulario 4-->
             <div id="app_js_4" class="row d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
-                <h2 class="tituloapp">Descuento De Zapatos</h2>
+                
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                     <!-- Button trigger modal -->
 
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <h2 class="tituloapp">Descuento De Zapatos</h2>
                     <button type="button" class="btn bg-modal" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                      Info
+                      <img src="img/info.png" alt="">
                     </button>
                     
                     <!-- Modal -->
@@ -319,10 +327,13 @@
                       </div>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="number" class="form-control text-c" id="zapatos" placeholder="Digite los zapatos a comprar!">
+                      <input type="number" class="form-control" id="zapatos" placeholder="Digite los zapatos a comprar!" required>
+                      <label for="floatingPassword">Digite Los Zapatos a Comprar</label>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="number" class="form-control text-c" id="precio" placeholder="Precio de los zapatos">
+                      
+                      <input type="number" class="form-control" id="precio" placeholder="Precio de los zapatos" required>
+                      <label for="floatingPassword">Precio De Los Zapatos</label>
                     </div>
                   
                     <button class="w-100 bg-1" type="button" onclick="lospisos()">Calcular</button>
@@ -334,8 +345,8 @@
             </div>
             <!--Fin Row2 Formulario 3-->
             <div class="card ancho" id="app-js-5">
-              <div class="card-header mb-3 bg-white" >
-                  <h1 class="py-1 textc"><img src="img/life-balance.gif" alt="" class="imgb">Calculadora Del Peso Ideal</h1>
+              <div class="card-header mb-3" >
+                  <h2 class="py-1 text-c3"><img src="img/imcb.gif" alt="" class="imgb">Calculadora Del Peso Ideal</h1>
               </div>
               <div class="card-body mb-3">
                   <form action="" id="form_pesoIdeal">
@@ -363,14 +374,31 @@
                           <button class="w-100 bg-1" type="submit">Calcular</button>
                       </div>
                       <div id="resultado"></div>
-                      <hr class="hr">
+                      
                   </form>
               </div>
+              
           </div>
+          <hr class="hr">
           <!--Fin Contenedor-->
         </main>
+        <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Ever Canchano, AppJs</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex flex-row ">
+            <li class="ms-2"><a class="text-c" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg><i class="bi bi-twitter-x"></i></a></li>
+            <li class="ms-2"><a class="text-c" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-2"><a class="text-c" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg><i class="bi bi-facebook"></i></a></li>
+          </ul>
+        </footer>
         <!-- Fin contenido Principal -->
       </div>
+      
     </div>
     <!--Fin Contenedor Fluido-->
     
